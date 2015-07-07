@@ -475,13 +475,37 @@ System.out.println("hoge" + (100 + 20));
 for文の書式は以下である。
 
 ```java:for文
-for (初期化式; 条件式; 変化式) {
+for (初期化式; 条件式; 更新) {
     処理1;
     処理2;
     ...
 }
 ```
 
+サンプルが2015.07.07のJSamole1_6.javaである。
 
+for文の中で宣言した変数は、for文のブロックを抜けると使用できません。
+
+```java:for文の注意
+int a = 0;
+
+for (int b = 0; b < 3; b++) {
+    System.out.println(a);
+    System.out.println(b);
+}
+
+System.out.println(a);
+System.out.println(b); // ダメ
+```
+
+for文では、初期化式や変化式を複数使うこともできる。
+
+```java:特殊なfor文
+for (初期化式1, 初期化式2, ..; 更新1, 更新2, .. ) {
+    処理
+}
+```
+
+for文を複数使って、反復を行うこともできる。
 
 
