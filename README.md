@@ -1,4 +1,4 @@
-# java_study
+#java_study
 
 kattsunがjavaをはじめて勉強するレポジトリ。
 
@@ -507,5 +507,147 @@ for (初期化式1, 初期化式2, ..; 更新1, 更新2, .. ) {
 ```
 
 for文を複数使って、反復を行うこともできる。
+
+```java:二重の反復
+for (int i = 0; i < 2; i++) {
+    for (int j = 0; j < 2; j++) {
+        処理;
+    } 
+}
+```
+
+#### while文
+
+while文の書式は以下である。
+
+```java:while文の書式
+while (条件式) {
+    処理;
+}
+```
+
+2015.07.07のJSample1_7.javaがサンプルである。
+
+#### do while文
+
+do while文の書式
+
+```java:do while文の書式
+do {
+        処理;
+} while (条件式);
+```
+
+2015.07.07のJSample1_8.javaがサンプルである。
+
+#### for each文
+
+for each文の書式
+
+```java:for each文の書式
+for (データ型 変数名: コレクション) {
+    処理;
+}
+```
+
+2015.07.07のJSample1_9.javaにサンプルがある。
+
+### 条件分岐
+
+#### if文
+
+if文の書式
+
+```java:if文の書式
+if (条件式) {
+    処理;
+}
+```
+
+2015.07.07のJSamole1_10.javaにサンプルがある。
+
+#### if else文
+
+if else文の書式
+
+```java:if else文の書式
+if (条件式) {
+    trueの時に実行する処理;
+} else {
+    falseの時に実行する処置;
+}
+```
+
+2015.07.07のJSample1_11.javaにサンプルがある。
+
+#### if else if文
+
+if else if文の書式
+
+```java:if else if文の書式
+if (条件式1) {
+    条件式1がtrueの時実行する処理;
+} else if (条件式2) {
+    条件式1がfalseで条件式2がtrueの時実行する処理;
+} else {
+    条件式1、条件式2のいずれもfalseの時実行する処理;
+}
+```
+
+2015.07.07のJSample1_12.javaにサンプルがある。
+
+#### switch文
+
+switch文の書式
+
+```java:switch文の書式
+switch (式) {
+    case 定数1:
+        処理1;
+        break;
+    case 定数2:
+        処理2;
+        break;
+}
+```
+
+2015.07.07のJSample1_13.javaにサンプルがある。
+また、breakの位置をクフすると複数のcaseを処理させることができる。
+
+### 処理の流れを処理する
+
+#### break文
+
+break文はfor文、while文、do while文、switch文のブロック内で使用され、break文が実行されるとブロックを抜けて次の処理へ移る。
+
+break文の書式
+
+```java:break文の書式
+break;
+```
+
+break文が実行されるとbreak文を含む一番内側のブロックを抜けるが、ラベルを付けることで抜けるブロックを任意に指定できる。
+
+break文にラベルを付ける場合の書式
+
+```java:break文にラベルを付ける場合の書式
+ラベル: {
+    ・・・
+    break ラベル;
+    ・・・
+}
+```
+
+2015.07.07のJSamole1_14.javaにサンプルがある。
+
+#### continue文
+
+continue文はbreak文と同様、for文、while文等のブロック内で使用され、continue文が実行されると実行された位置から残りの処理をスキップする
+
+```java:continue文の書式
+continue;
+```
+
+また、breakと同様にラベルを付けることもできる。
 
 

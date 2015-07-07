@@ -7,5 +7,6 @@ class JSample1_3 {
 
         num = num * 2;
         System.out.println(num);
+    
     }
 }
